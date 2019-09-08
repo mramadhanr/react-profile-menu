@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 import ProfileMenu from './components/ProfileMenu.js/ProfileMenu';
+
+import profilePic from './media/img/profile-pic.png';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ProfileMenu />
+      <div className="app__profile-menu">
+        <ProfileMenu src={profilePic} />
+      </div>
     </div>
   );
 }
